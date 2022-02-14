@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пример 62</title>
+</head>
+<body>
+    <script type = "text/javascript">
+        const mult = (x, y) => x * y;
+        const x = prompt('Введите значение переменной x');
+        if (x.trim() == '') {
+            alert('Значение переменной x не введено!')
+        }
+        else if (!isFinite(x)) {
+            alert('Введенное Вами значение не является конечным числом (то есть NaN), либо значение является плюс или минус бесконечностью (то есть Infinity).');
+        }
+        const y = prompt('Введите значение переменной y');
+        if (y.trim() == '') {
+            alert('Значение переменной y не введено!')
+        }
+        else if (!isFinite(y)) {
+            alert('Введенное Вами значение не является конечным числом (то есть NaN), либо значение является плюс или минус бесконечностью (то есть Infinity).');
+        }
+        if (x.trim() == '' || y.trim() == '' || !isFinite(x * y)) {
+            string = 'x или/и y не заданы, или результат вычисления не является конечным числом (то есть NaN), либо результат вычисления является плюс или минус бесконечностью (то есть Infinity).'}
+        else string = `The multiplying of ${x} ans ${y} is ${mult(x, y)}.`;
+        console.log(string);
+    </script>
+    
+</body>
+</html>
